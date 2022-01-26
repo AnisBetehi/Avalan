@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import {onAuthStateChanged} from 'firebase/auth';
-import loader from './images/Loader.gif'
 import styled from 'styled-components';
 import { auth, db} from './firebase-config';
 import {getDoc, doc, updateDoc} from 'firebase/firestore';
@@ -53,7 +52,7 @@ export const Wrapper = ({children}) => {
     
     return (
         <>
-            {ui.loading? <Img src={loader} />: children} 
+            {ui.loading? <Img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/Loader.gif?alt=media&token=64b60939-f8cf-4a1e-b9a1-a45077f9d451' />: children} 
         </>
     )
 

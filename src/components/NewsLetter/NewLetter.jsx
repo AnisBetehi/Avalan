@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Letterimg from '../../images/Newsletter.png'
 
 const NewLetter = () => {
   return (
       <NewsLetterContainer>
-        <img src={Letterimg} alt="" />
+        <img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/Newsletter.png?alt=media&token=1d118431-7a32-4662-b62e-d83b266d7b8f' alt="" />
         <div>
             <h5>Subscribe to our newsletter</h5>
             <input type="email" placeholder='Enter your email' />
