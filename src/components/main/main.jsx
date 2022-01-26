@@ -14,8 +14,8 @@ Affiliate marketing with Avalan is super easy. Just sign up and share our site w
             </TextContainer>
             <ImagesContainer>
                 <div>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/pleased-smiling-redhead-woman-points-finger-copy-space-shows-special-offer-shopping-sale-recommends-good-discount-dressed-stylish-blue-outfit-has-happy-mood-breaks-through-paper-hole.jpg?alt=media&token=08713339-bbaf-4e21-b94c-8044d3905fd3' alt="" />
-                    <img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/shocked-two-women-friends-holding-shopping-bags-using-mobile-phone.jpg?alt=media&token=5690b564-f782-49d9-9e2a-f3fc0f467935' alt="" />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/pleased-smiling-redhead-woman-points-finger-copy-space-shows-special-offer-shopping-sale-recommends-good-discount-dressed-stylish-blue-outfit-has-happy-mood-breaks-through-paper-hole.jpg?alt=media&token=62302a9c-3bac-4e40-a44b-6ea11799c148' alt="" />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/shocked-two-women-friends-holding-shopping-bags-using-mobile-phone.jpg?alt=media&token=44be2728-8b6a-41e1-9085-f96b34a25f56' alt="" />
                 </div>
             </ImagesContainer>
         </MainContainer>

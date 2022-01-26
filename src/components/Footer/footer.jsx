@@ -27,7 +27,7 @@ const Footer = () => {
                     <h5>Cookies & Security</h5>
                 </div>
                 <div>
-                    <h4>ADRESS</h4>
+                    <h4>ADDRESS</h4>
                     <h5>15 Vale Street</h5>
                     <h5>Tiverton, Rhode Island(RI)</h5>
                     <h5>(401) 816-0438</h5>

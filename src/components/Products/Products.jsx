@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../Card/Card';
 import { useSelector} from 'react-redux';
-import loader from '../../images/Loader.gif';
 
 
 const Products = ({category}) => {
@@ -20,7 +19,7 @@ const Products = ({category}) => {
                     return (
                         <Card key={product.id} category={product.category} name={product.title} price={product.price} image={product.imageUrl} id={product.id}/>
                     )
-                }) : <img alt='loader' src={loader} />}
+                }) : <img alt='loader' src='https://firebasestorage.googleapis.com/v0/b/e-commerce-9c9e9.appspot.com/o/Loader.gif?alt=media&token=64b60939-f8cf-4a1e-b9a1-a45077f9d451' />}
         </StyledSection>  
         
     )
