@@ -24,7 +24,7 @@ const Cart = () => {
 
     const handlePageClick = (e) => {
         setCurrentPage(e.selected + 1);
-        window.scroll(0, 10);
+        window.scroll(0, 200);
     }
 
 
