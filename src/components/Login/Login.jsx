@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import styled from 'styled-components';
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
-import { auth, db } from '../../firebase-config';
+import { auth, db } from '../../firebase/firebase-config';
 import {setDoc, doc} from 'firebase/firestore'
 import { useNavigate, useLocation } from 'react-router';
 import { useSelector } from 'react-redux';

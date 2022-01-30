@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { auth } from "../firebase-config";
+import { auth } from "../firebase/firebase-config";
 
 
 const userSlice = createSlice({

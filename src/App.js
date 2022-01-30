@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import { GlobalStyles } from './GlobalStyles';
-import ThemeProv from './ThemeProv.jsx'
+import { GlobalStyles } from './Styles/GlobalStyles';
+import ThemeProv from './Styles/ThemeProv.jsx'
 import Header from './components/Header/Header';
 import Main from './components/main/main';
 import Products from './components/Products/Products.jsx';

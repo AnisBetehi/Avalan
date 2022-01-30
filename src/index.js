@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import{Wrapper} from './userDataUpdate.jsx';
-import { store } from './store';
+import { store } from './features/store';
 import {Provider} from 'react-redux';
 
 

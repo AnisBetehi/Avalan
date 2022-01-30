@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {onAuthStateChanged} from 'firebase/auth';
 import styled from 'styled-components';
-import { auth, db} from './firebase-config';
+import { auth, db} from './firebase/firebase-config';
 import {getDoc, doc, updateDoc} from 'firebase/firestore';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUser } from './features/user';
