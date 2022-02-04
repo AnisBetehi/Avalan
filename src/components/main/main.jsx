@@ -127,7 +127,7 @@ const ImagesContainer = styled.div`
 `
 
 const Line = styled.section`
-    height: 5px;
+    height: 2px;
     width: 100%;
     background-color: ${({theme}) => theme.upperHeader};
 `
