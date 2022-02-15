@@ -10,8 +10,7 @@ const ThemeProv = ({children}) => {
         accent: 'gray',
         footer: '#282a2b',
         footerTitle: '#a16dc9',
-        navigationGlassy: 'rgba(112, 51, 181, .5)',
-        mainBg: 'white',
+        navigationGlassy: 'rgba(112, 51, 181, .5)'
     }
     return (
         <ThemeProvider theme={theme}>

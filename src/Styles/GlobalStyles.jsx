@@ -27,21 +27,5 @@ export const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
 
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button {  
-        opacity: .7;
-        height: 25px;
-    }
-
-    .slick-dots li.slick-active button:before {
-         color: red;
-         opacity: 1;
-    }
-
-    .slick-dots li button:before {
-        color: white;
-    }
-
-
 `
 
