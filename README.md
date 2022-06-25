@@ -1,4 +1,4 @@
-# GOCOIN
+# Avalan
 ### [**Avalan**](https://avalan.netlify.app) is an E-commerce store that allows users and visitors to browse and purchase various products.
 
 
