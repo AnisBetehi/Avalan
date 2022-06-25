@@ -29,25 +29,26 @@ const Products = ({category}) => {
 const StyledSection = styled.section`
     width: 100%;
     margin: 0 auto;
-    min-height: 200px;
+    min-height: 12em;
     position: relative;
-    padding: 30px;
-    padding-top: 100px;
+    padding: 1.7em;
+    padding-top: 8em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.1em;
+    font-size: 1rem;
 
 
 
 
     > img {
-        width: 50px;
+        width: 3em;
         position: absolute;
         top: 50%;
-        left: 50:
+        left: 50%:
         transform: translate(-50%, -50%);
     }
 
@@ -55,6 +56,26 @@ const StyledSection = styled.section`
     @media(min-width: 40em) {
         flex-direction: row;
         width: 90%;
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
     }
 
 `

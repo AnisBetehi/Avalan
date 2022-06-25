@@ -130,25 +130,26 @@ const Header = () => {
 
 const UpperHeader = styled.header`
     width: 100%;
-    height: 50px;
+    height: 3.1em;
     background-color: ${({theme}) => theme.upperHeader};
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: .1em solid rgba(255, 255, 255, .1);
+    font-size: 1em;
 
 
     h5, a {
         color: ${({theme}) => theme.accent};
         text-decoration: none;
-        font-size: 14px;
+        font-size: .9em;
     }
 
     > div > div {
         display: flex;
         justify-content: space-betwwen;
         align-items: center;
-        gap: 40px;
+        gap: 2.3em;
     }
 
     @media(max-width: 700px) {
@@ -161,6 +162,26 @@ const UpperHeader = styled.header`
             }
           
         }
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.9rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.7rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 3rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 4rem;
     }
 `
 
@@ -175,9 +196,9 @@ const LowerHeader = styled.header`
 
         h3 {
             width: 33%;
-            padding-block: 20px;
+            padding-block: 1.3em;
             text-align: center;
-            font-size: clamp(12px, 13px, 15px);
+            font-size: clamp(.6em, .75em, .95em);
             font-weight: 550;
         }
 
@@ -211,10 +232,31 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.9rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.7rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.9rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.7rem;
+    }
 `
 
 const StyledHeader = styled.header`
-    height: 100px;
+    height: 6.5em;
     width: 100%;
     position: relative;
     background-color: ${({theme}) => theme.mainBg};
@@ -237,10 +279,10 @@ const StyledHeader = styled.header`
         position: relative;
         display: flex;
         justify-content: flex-end;
-        margin-right: 25px;
+        margin-right: 1.6em;
 
         .shopping-cart-icon {
-            font-size: 25px;
+            font-size: 1.6em;
             cursor: pointer;
             transition: .2s ease;
             color: ${({theme}) => theme.accent };
@@ -252,11 +294,11 @@ const StyledHeader = styled.header`
 
         h5 {
             position: absolute;
-            top: -7px;
-            right: -10px;
+            top: -.7em;
+            right: -.8em;
             color: white;
-            padding: 5px 7px;
-            font-size: 9px;
+            padding: .6em .8em;
+            font-size: .55em;
             background-color: ${({theme}) => theme.main};
             border-radius: 50%;
             pointer-events: none;
@@ -279,11 +321,31 @@ const StyledHeader = styled.header`
             font-size: 10px;
         }
     }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.9rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.7rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 3rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 4rem;
+    }
    
 `
 
 const StyledLogo = styled.h1`
-    font-size: 25px;
+    font-size: 1.5em;
     a {
         text-decoration: none;
         color: ${({theme}) => theme.main};
@@ -305,11 +367,11 @@ const Navigation = styled.div`
     transition: .5s ease;
 
     a {
-        font-size: 15px;
+        font-size: .95em;
         font-weight: 500;
         text-decoration: none;
         color: ${({theme}) => theme.accent};
-        margin: 0 5px;
+        margin: 0 .4em;
         transition: .5s ease;
     }
 
@@ -320,9 +382,9 @@ const Navigation = styled.div`
     .close-menu {
             color: white;
             position: absolute;
-            top: 20px;
-            right: 10px;
-            font-size: 2rem;
+            top: 1.1em;
+            right: .6em;
+            font-size: 2em;
             cursor: pointer;
     }
 
@@ -370,8 +432,8 @@ const CartProfileContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
-    padding-block: 30px;
+    margin-right: 1.1em;
+    padding-block: 1.8em;
 
     @media(max-width: 700px) {
         justify-content: space-around;
@@ -381,50 +443,50 @@ const CartProfileContainer = styled.div`
 
 const CartPreview = styled.div`
     position: absolute;
-    top: 20px;
-    left: -230px;
-    width: 250px;
-    min-height: 200px;
+    top: 1.2em;
+    left: -15em;
+    width: 16em;
+    min-height: 12em;
     opacity: ${({visible}) => visible ? '1' : '0'};
     pointer-events: ${({visible}) => visible ? 'all' : 'none'};
     display: flex;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1em;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 1.4em rgba(0, 0, 0, .2);
     z-index: 500;
     transition: .5s ease;
 
     > h1 {
-        font-size: 16px;
+        font-size: 1em;
         text-align: center;
         color: ${({theme}) => theme.accent};
     }
 
     ul {
-        padding-top: 20px;
+        padding-top: 1.1em;
 
         div {
-            padding-left: 15px;
-            margin: 5px 0;
+            padding-left: .95em;
+            margin: .4em 0;
 
             li {
                 color: ${({theme}) => theme.upperHeader};
                 font-weight: 600;
-                font-size: 13px;
-                line-height: 20px;
-                padding-block: 10px;
+                font-size: .8em;
+                line-height: 1.1em;
+                padding-block: .6em;
             
 
                   
                 span:first-child {
-                    font-size: 13px;
+                    font-size: .85em;
                     color: ${({theme}) => theme.main};
                     text-decoration: underline;
                     font-weight: 900;
-                    margin-left: 5px;
+                    margin-left: .4em;
                     text-shadow: none;
                 }
                
@@ -434,14 +496,14 @@ const CartPreview = styled.div`
         }
 
         h4 {
-            font-size: 14px;
-            margin-left: 10px;
-            margin-top: 20px;
+            font-size: .9em;
+            margin-left: .6em;
+            margin-top: 1.1em;
 
         }
 
         div:not(:last-child) {
-                border-bottom: 1px solid white;
+                border-bottom: .1em solid white;
         }
 
     
@@ -449,7 +511,7 @@ const CartPreview = styled.div`
     }
 
     .total {
-        font-size: 13px;
+        font-size: .85em;
         color: ${({theme}) => theme.upperHeader};
 
         span {
@@ -458,16 +520,16 @@ const CartPreview = styled.div`
     }
 
     > div:last-child {
-        margin-top: 30px;
+        margin-top: 1.8em;
 
         button {
             border: none;
-            padding: 10px 20px;
+            padding: .6em 1.4em;
             background-color: ${({theme}) => theme.main};
             color: white;
-            font-size: 12px;
+            font-size: .8em;
             cursor: pointer;
-            margin: 10px 0;
+            margin-top: .6em;
         }
     }
 
@@ -507,8 +569,8 @@ const CartPreview = styled.div`
 `
 
 const Tick = styled.span`
-    margin-left: 10px;
-    font-size: 12px;
+    margin-left: .6em;
+    font-size: .8em;
     color: ${({theme}) => theme.main};
     text-shadow: none;
                 
@@ -516,8 +578,8 @@ const Tick = styled.span`
 
 const ProfileContainer = styled.div`
    position: relative;
-   height: 35px;
-   width: 35px;
+   height: 2em;
+   width: 2em;
    border-radius: 50%;
    background-color: white;
    display: grid;
@@ -526,8 +588,8 @@ const ProfileContainer = styled.div`
 `
 
 const Initials = styled.h1`
-    font-size: 15px;
-    padding: 5px;
+    font-size: .95em;
+    padding: .4em;
     cursor: pointer;
 
     &:first-letter {
@@ -541,20 +603,20 @@ const ProfilePreview = styled.div`
     justify-content: space-around;
     position: absolute;
     top: 75%;
-    left: -180px;
-    height: ${({visible}) => visible ? '120px': '0'};
+    left: -11.5em;
+    height: ${({visible}) => visible ? '7em': '0'};
     padding: ${({visible}) => visible ? '10px 0': '0'};
-    width: 200px;
+    width: 12.5em;
     background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-    border-radius: 3px;
+    box-shadow: 0 0 1.1em rgba(0, 0, 0, .1);
+    border-radius: .2em;
     transition: .3s ease;
     overflow: hidden;
 
     h4 {
         color: ${({theme}) => theme.main};
-        padding: 10px 15px;
-        font-size: 16px;
+        padding: .6em 1em;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -564,10 +626,10 @@ const ProfilePreview = styled.div`
 
     h5 {
         display: inline;
-        font-size: 12px;
+        font-size: .8em;
         color: black;
         cursor: pointer;
-        padding-left: 20px;
+        padding-left: 1.1em;
     }
 
     @media(max-width: 700px) {
@@ -580,11 +642,12 @@ const ProfilePreview = styled.div`
 const Login = styled.button`
     background-color: ${({theme}) => theme.main};
     outline: none;
-    padding: 8px 16px;
+    padding: .55em 1em;
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: .2em;
+    font-size: .95em;
 
     @media(max-width: 700px) {
         

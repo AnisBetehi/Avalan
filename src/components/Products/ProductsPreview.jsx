@@ -56,32 +56,33 @@ const Line = styled.section`
 `
 
 const PreviewContainer = styled.section`
-    min-height: 400px;
+    min-height: 2.5em;
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding-block: 3rem;
+    gap: 2.5em;
+    padding-block: 3em;
+    font-size: 1rem;
 
     > h4 {
         display: flex;
         justify-content: space-between;
         align-self: center;
-        border-bottom: 1px solid rgba(0, 0, 0, .4);
+        border-bottom: .1em solid rgba(0, 0, 0, .4);
         width: 90%;
-        padding-bottom: 10px;
+        padding-bottom: .6em;
         font-weight: 100;
 
         span {
-            font-size: 12px;
+            font-size: .8em;
             color: ${({theme}) => theme.main};
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: .4em;
         }
     }
 
@@ -91,8 +92,8 @@ const PreviewContainer = styled.section`
         justify-content: center;
         flex-wrap: wrap;
         height: 85%;
-        gap: 5px;
-        row-gap: 60px;
+        gap: .4em;
+        row-gap: 3.4em;
 
         @media(max-width: 500px) {
             flex-direction: column;
@@ -100,8 +101,8 @@ const PreviewContainer = styled.section`
         }
 
         div {
-            height: 340px;
-            width: 250px;
+            height: 19.5em;
+            width: 15em;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -110,22 +111,46 @@ const PreviewContainer = styled.section`
 
             img {
                 width: 80%;
-                height: 250px;
+                height: 15em;
                 object-fit: cover;
                 cursor: pointer;
             }
 
             h4 {
-                font-size: 14px;
+                font-size: .9em;
                 font-weight: 100;
-                margin-top: 10px;
-                padding-inline: 10px;
+                margin-top: .6em;
+                padding-inline: .6em;
             }
         }
     }
 
     @media(max-width: 800px) {
         width: 100%;
+    }
+
+    @media(max-width: 1250px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
     }
 
 

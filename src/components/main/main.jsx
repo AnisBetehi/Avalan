@@ -33,17 +33,38 @@ export default Main;
 const MainContainer = styled.main`
     width: 80%;
     margin: 0 auto;
-    min-height: 550px;
-    padding-block: 4rem;
+    min-height: 31em;
+    padding-block: 4em;
     display: grid;
     align-content: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 400px;
     gap: 50px;
+    font-size: 1rem;
 
     @media(max-width: 1250px) {
         grid-template-columns: 1fr;
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
     }
 `
 
@@ -52,11 +73,11 @@ const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 1em;
 
     h1 {
         color: ${({theme}) => theme.main};
-        font-size: 35px;
+        font-size: 2em;
 
         @media(max-width: 700px) {
             font-size: 30px;
@@ -68,13 +89,14 @@ const TextContainer = styled.div`
         color: white;
         outline: none;
         border: none;
-        padding-block: 1rem;
+        padding-block: 1em;
         cursor: pointer;
-        width: 200px;
+        width: 12.5em;
+        font-size: .8em;
     }
 
     p {
-        font-size: 15px;
+        font-size: .95em;
         font-weight: 400;
     }
 `
@@ -104,11 +126,11 @@ const ImagesContainer = styled.div`
     }
     img {
         height: 80%;
-        width: 350px;
+        width: 19.5em;
         object-fit: cover;
         position: absolute;
         bottom: 0;
-        right: 20px;
+        right: 1.1em;
 
         @media(max-width: 500px) {
             width: 200px;
@@ -127,7 +149,7 @@ const ImagesContainer = styled.div`
 `
 
 const Line = styled.section`
-    height: 2px;
+    height: .15em;
     width: 100%;
     background-color: ${({theme}) => theme.upperHeader};
 `

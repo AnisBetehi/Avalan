@@ -19,14 +19,15 @@ export default NewLetter;
 const NewsLetterContainer = styled.section`
     width: 90%;
     margin: 50px auto;
-    min-height: 300px;
+    min-height: 17em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 1rem 2rem;
+    padding-block: 1em 2em;
+    font-size: 1rem;
 
     img {
-        width: 400px;
+        width: 25em;
 
         @media(max-width: 800px) {
             width: 300px;
@@ -36,27 +37,29 @@ const NewsLetterContainer = styled.section`
     div {
         display: flex;
         flex-direction: column;
-        gap: 20px; 
+        gap: 1.1em; 
 
         h5 {
-            font-size: 30px;
+            font-size: 1.7em;
             color: ${({theme}) => theme.main};
         }
 
         input {
             outline: none;
             border: none;
-            border-bottom: 1px solid black;
-            padding-block: .5rem;
+            border-bottom: .1em solid black;
+            padding-block: .5em;
+            font-size: .9em;
         }
 
         button {
             background-color: ${({theme}) => theme.main};
             border: none;
             outline: none;
-            padding-block: 10px;
+            padding-block: .6em;
             color: white;
             cursor: pointer;
+            font-size: .8em;
         }
     }
 
@@ -70,6 +73,27 @@ const NewsLetterContainer = styled.section`
                font-size: 25px;
            }
        }
+    }
+
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
     }
 `
 

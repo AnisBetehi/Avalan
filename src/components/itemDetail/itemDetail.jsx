@@ -42,32 +42,33 @@ const ItemDetail = () => {
 const DetailContainer = styled.section`
 
     display: grid;
-    margin-block: 50px;
-    padding: 2rem;
-    gap: 30px;
+    margin-block: 3em;
+    padding: 2em;
+    gap: 1.7em;
     width: 100%;
     grid-auto-rows: auto;
     overflow: hidden;
+    font-size: 1rem;
 
 
 
     h1 {
         color: ${({theme}) => theme.main};
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 1.1em;
     }
 
     img {
         align-self: center;
         justify-self: center;
         width: 100%;
-        max-height: 300px;
+        max-height: 17em;
         object-fit: contain;
     }
 
     p {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: .95em;
+        line-height: 1.1em;
     }
 
     h3 {
@@ -85,8 +86,8 @@ const DetailContainer = styled.section`
             'img button'
             
         ;
-        gap: 20px;
-        column-gap: 50px;
+        gap: 1.1em;
+        column-gap: 3em;
 
 
         img {
@@ -97,7 +98,7 @@ const DetailContainer = styled.section`
 
         h1 {
             grid-area: title;
-            font-size: 22px;
+            font-size: 1.2em;
         }
 
         h3 {
@@ -106,8 +107,8 @@ const DetailContainer = styled.section`
 
         p {
             grid-area: description;
-            font-size: 14px;
-            line-height: 25px;
+            font-size: .95em;
+            line-height: 1.5em;
         }
 
         button {
@@ -116,19 +117,39 @@ const DetailContainer = styled.section`
         }
     
   }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
+    }
 `
 
 const Added = styled.button`
-    padding: 10px 30px;
-    width: 200px;
-    height: 60px;
+    padding: .6em 1.7em;
+    width: 12em;
+    height: 3.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: .15em;
     background-color: ${({theme}) => theme.main};
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     outline: none;
     border: none;
@@ -136,16 +157,16 @@ const Added = styled.button`
 `
 
 const AddToCart = styled.button`
-    padding: 10px 30px;
-    width: 200px;
-    height: 60px;
+    padding: .6em 1.7em;
+    width: 12em;
+    height: 3.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: .15em;
     background-color: ${({theme}) => theme.main};
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     outline: none;
     border: none;

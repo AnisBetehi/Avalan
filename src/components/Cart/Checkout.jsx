@@ -78,13 +78,14 @@ export default Checkout;
 
 const CheckoutContainer = styled.section`
     width: 60%;
-    margin: 50px auto;
-    padding: 2rem 4rem;
-    box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
+    margin: 3em auto;
+    padding: 2em 4em;
+    box-shadow: rgba(99, 99, 99, 0.15) 0px .15em .55em 0px;
+    font-size: 1rem;
     
     h1 {
-      border-bottom: 1px solid rgba(0, 0, 0, .2);
-      padding-bottom: 20px;
+      border-bottom: .1em solid rgba(0, 0, 0, .2);
+      padding-bottom: 1.1em;
       font-weight: 100;
     }
 
@@ -92,10 +93,11 @@ const CheckoutContainer = styled.section`
       .submit-button {
         border: none;
         outline: none;
-        padding: 1rem;
+        padding: 1em;
         color: white;
         background-color: ${({theme}) => theme.main};
         cursor: pointer;
+        font-size: .85em;
       }
     }
 
@@ -109,6 +111,27 @@ const CheckoutContainer = styled.section`
       }
     }
 
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.8rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
+    }
+
 `
 
 const Section = styled.section`
@@ -116,42 +139,42 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-block: 40px;
+  margin-block: 2.5em;
 
   > h3 {
     color: ${({theme}) => theme.main};
   }
 
   input {
-    padding: 9px 8px;
+    padding: .55em .5em;
     outline: none;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    border-radius: 2px;
+    margin-bottom: 1.1em;
+    margin-top: .6em;
+    border-radius: .2em;
     border: 1px solid rgba(0, 0, 0, .2);
     outline: none;
-    font-size: 14px;
+    font-size: .9em;
   }
 
   > label:first-of-type {
-    margin-top: 40px;
+    margin-top: 2.5em;
   }
 
   label {
     font-weight: 100;
-    font-size: 14px;
+    font-size: .9em;
     color: ${({theme}) => theme.accent};
   }
 
 
   .inner-container {
     display: flex;
-    gap: 10px;
+    gap: .6em;
 
     .inner-grid {
       display: grid;
       grid-template-column: 1fr 1fr;
-      column-gap: 10px;
+      column-gap: .6em;
 
       > label {
         grid-column: 1 / 3;

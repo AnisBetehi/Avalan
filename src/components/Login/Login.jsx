@@ -116,17 +116,38 @@ const Login = () => {
 
 const Container = styled.div`
     position: relative;
-    height: 400px;
-    width: 400px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
-    margin: 100px auto;
+    height: 25em;
+    width: 25em;
+    box-shadow: 0px 0px .95em rgba(0, 0, 0, .4);
+    margin: 7em auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 
     @media(max-width: 700px) {
         width: 90%;
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.8rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
     }
 `
 
@@ -142,8 +163,8 @@ const Form = styled.form`
    
 
 const Title = styled.h1`
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-size: 1.1em;
+    margin-bottom: 2.5em;
 `
 
 const ErrorMessage = styled.h5`
@@ -164,7 +185,7 @@ const EmailField = styled.input`
     border-bottom: 1px solid black;
     padding: 7px 0;
     font-weight: 550;
-    font-size: 12px;
+    font-size: .8em;
     outline: none;
 `
 
@@ -173,16 +194,17 @@ const PasswordField = styled(EmailField)`
 `
 const SubmitButton = styled.button`
     border: none;
-    padding: 10px 15px;
+    padding: .6em .95em;
     background-color: ${({theme}) => theme.main};
     color: white;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: .6em;
+    font-size: .85em;
 `
 
 const ToggleLogin = styled.h5`
     color: crimson;
-    font-size: 14px;
+    font-size: .9em;
     cursor: pointer;
     user-select: none;
 `

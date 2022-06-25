@@ -47,8 +47,33 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
     width: 100%;
-    min-height: 350px;
+    min-height: 20em;
     background-color: ${({theme}) => theme.footer};
+    font-size: 1rem;
+
+    @media(max-width: 1250px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
+    }
 `
 
 
@@ -57,7 +82,7 @@ const Container = styled.div`
     width: 60%;
     margin: 0 auto;
     display: flex;
-    padding: 5rem 0 3rem;
+    padding: 5em 0 3em;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -65,15 +90,15 @@ const Container = styled.div`
     div {
         h4 {
             user-select: none;
-            margin-bottom: 15px;
+            margin-bottom: .95em;
             color: ${({theme}) => theme.footerTitle};
         }
 
         h5 {
             cursor: pointer;
             user-select: none;
-            margin-block: 10px;
-            font-size: 12px;
+            margin-block: .6em;
+            font-size: .8em;
             font-weight: 500;
             color: white;
         }

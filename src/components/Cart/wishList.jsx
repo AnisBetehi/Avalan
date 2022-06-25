@@ -101,13 +101,34 @@ export default WishList;
 
 const OuterContainer = styled.section`
     width: 100%;
-    min-height: 250px;
+    min-height: 15em;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    gap: 40px;
+    margin-top: 1.1em;
+    gap: 2.5em;
+    font-size: 1rem;
+    
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.8rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
+    }
 `
 
 const SearchContainer = styled.div`
@@ -115,14 +136,15 @@ const SearchContainer = styled.div`
         display: flex;
         align-items: center;
         width: 32%;
-        border: 1px solid rgba(0, 0, 0, .2);
-        padding: .5rem 1rem;
+        border: .1em solid rgba(0, 0, 0, .2);
+        padding: .5em 1em;
 
 
         input {
             outline: none;
             border: none;
             flex: 3;
+            font-size: .8em;
         }
 
         svg {
@@ -139,7 +161,7 @@ const Container = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.1em;
 
     @media(min-width: 40em) {
         width: 80%;
@@ -151,11 +173,11 @@ const Container = styled.section`
 
 const TitleContainer = styled.div`
     width: 80%;
-    padding: 0 10px;
+    padding: 0 .6em;
 `
 
 const Title = styled.h2`
-    padding: 10px 0;
+    padding: .6em 0;
 
     @media(max-width: 700px) {
         font-size: 15px;
@@ -172,6 +194,9 @@ const WishListLength = styled.h4`
 `
 
 const Pagination = styled.div`
+
+    font-size: 1rem;
+
     .pagination-container {
         width: 100vw;
         background-color: ${({theme}) => theme.main};
@@ -179,59 +204,79 @@ const Pagination = styled.div`
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        padding: 1rem;
+        padding: 1em;
         list-style: none;
-        margin-top: 40px;
+        margin-top: 2.5em;
 
         li {
             user-select: none;
         }
 
         .page-link {
-            font-size: 12px;
+            font-size: .8em;
             font-weight: 900;
-            margin: 0 15px;
+            margin: 0 .95em;
             cursor: pointer;
         }
 
         .active-page-link {
-            border: 2px solid white;
+            border: .15em solid white;
             border-radius: 50%;
             color: white;
-            padding: 10px 15px;
+            padding: .6em .95em;
             
         }
 
         .previous-page-link, .next-page-link {
             cursor: pointer;
-            font-size: 20px;
+            font-size: 1.1em;
             color: white;
             font-weight: 900;
         }
 
         .previous-page-link {
-            margin-right: 20px;
-            padding: 5px;
+            margin-right: 1.1em;
+            padding: .4em;
         }
 
         .next-page-link {
-            margin-left: 20px;
-            padding: 5px;
+            margin-left: 1.1em;
+            padding: .4em;
         }
 
         .break-link {
             cursor: pointer;
-            padding: 0 20px;
+            padding: 0 1.1em;
         }
 
+    }
+
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.8rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
     }
 `
 
 const StyledCard = styled.div`
-    width: 300px;
-    height: 400px;
+    width: 17em;
+    height: 25em;
     overflow: hidden;
-    padding: 20px 15px;
+    padding: 1.1em .95em;
     /* flex-shrink: 0; */
     display: flex;
     flex-direction: column;
@@ -240,10 +285,10 @@ const StyledCard = styled.div`
     position: relative;
     text-align: left;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 1.1em rgba(0, 0, 0, .3);
 
     > div {
-        height: 150px;
+        height: 9.5em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -255,7 +300,7 @@ const CardImage = styled.img`
     height: 50%;
     object-fit: contain;
     position: absolute;
-    top: 10px;
+    top: .6em;
     left: 0;
     cursor: pointer;
 `
@@ -268,41 +313,42 @@ const InputContainer = styled.div`
 
 `
 const CardPrice = styled.h5`
-    padding: 10px 15px;
+    padding: .6em .95em;
     background-color: ${({theme}) => theme.main};
     color: white;
-    font-size: 15px;
-    border-radius: 5px;
+    font-size: .95em;
+    border-radius: .4em;
     position: absolute;
-    left: 15px;
-    top: 20px;
+    left: .95em;
+    top: 1.1em;
 `
 
 const CardTitle = styled.h1`
-    font-size: 14px; 
+    font-size: .9em; 
     text-align: left;
-    margin-top: 20px;
+    margin-top: 1.1em;
     color: ${({theme}) => theme.upperHeader};
 `
 
 
 const Button = styled.button`
     width: 100%;
-    padding: 10px 15px;
+    padding: .6em .95em;
     outline: none;
     border: none;
     background-color: ${({theme}) => theme.main};
     color: white;
     cursor: pointer;
+    font-size: 1em;
 `
 
 const RemoveButton = styled.h4`
     position: absolute;
-    top: 15px;
-    right: 10px;
+    top: .95em;
+    right: .6em;
     color: ${({theme}) => theme.main};
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     transition: .3s ease;
     z-index: 100;
 

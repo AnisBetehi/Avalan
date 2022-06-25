@@ -91,15 +91,37 @@ const Cart = () => {
 const CartContainer = styled.div`
     width: 80%;
     display: flex;
-    margin: 20px auto 0;
-    min-height: 250px;
+    margin: 1.1em auto 0;
+    min-height: 15em;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    font-size: 1rem;
 
 
     @media(max-width: 700px) {
        width: 95%;
+    }
+
+    
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.5em;
     }
 `
 
@@ -110,13 +132,14 @@ const SearchContainer = styled.div`
         align-items: center;
         width: 40%;
         border: 1px solid rgba(0, 0, 0, .2);
-        padding: .5rem 1rem;
+        padding: .5em 1em;
 
 
         input {
             outline: none;
             border: none;
             flex: 3;
+            font-size: .8em;
         }
 
         svg {
@@ -132,68 +155,90 @@ const ShoppingCart = styled.div`
 `
 
 const Pagination = styled.div`
-    .pagination-container {
-        width: 100vw;
-        background-color: ${({theme}) => theme.main};
+       font-size: 1rem;
+
+.pagination-container {
+    width: 100vw;
+    background-color: ${({theme}) => theme.main};
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    list-style: none;
+    margin-top: 2.5em;
+
+    li {
+        user-select: none;
+    }
+
+    .page-link {
+        font-size: .8em;
+        font-weight: 900;
+        margin: 0 .95em;
+        cursor: pointer;
+    }
+
+    .active-page-link {
+        border: .15em solid white;
+        border-radius: 50%;
         color: white;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-        list-style: none;
-        margin-top: 40px;
+        padding: .6em .95em;
+        
+    }
 
-        li {
-            user-select: none;
-        }
+    .previous-page-link, .next-page-link {
+        cursor: pointer;
+        font-size: 1.1em;
+        color: white;
+        font-weight: 900;
+    }
 
-        .page-link {
-            font-size: 12px;
-            font-weight: 900;
-            margin: 0 15px;
-            cursor: pointer;
-        }
+    .previous-page-link {
+        margin-right: 1.1em;
+        padding: .4em;
+    }
 
-        .active-page-link {
-            border: 2px solid white;
-            border-radius: 50%;
-            color: white;
-            padding: 10px 15px;
-            
-        }
+    .next-page-link {
+        margin-left: 1.1em;
+        padding: .4em;
+    }
 
-        .previous-page-link, .next-page-link {
-            cursor: pointer;
-            font-size: 20px;
-            color: white;
-            font-weight: 900;
-        }
+    .break-link {
+        cursor: pointer;
+        padding: 0 1.1em;
+    }
 
-        .previous-page-link {
-            margin-right: 20px;
-            padding: 5px;
-        }
+}
 
-        .next-page-link {
-            margin-left: 20px;
-            padding: 5px;
-        }
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
 
-        .break-link {
-            cursor: pointer;
-            padding: 0 20px;
-        }
+    @media(min-width: 2000px) {
+        font-size: 1.8rem;
+    }
 
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
     }
 `
 
 const TitleContainer = styled.div`
     width: 80%;
-    padding: 20px 10px;
+    padding: 1.1em .6em;
 `
 
 const Title = styled.h2`
-    padding: 10px 0;
+    padding: .6em 0;
 
     @media(max-width: 700px) {
         font-size: 15px;
@@ -226,8 +271,8 @@ const Checkout = styled.div`
     justify-content: flex-end;
     align-items: center;
     color: red;
-    gap: 10px;
-    font-size: 14px;
+    gap: .6em;
+    font-size: .9em;
     cursor: pointer;
     width: 100%;
 

@@ -52,16 +52,18 @@ const Item = ({name, quantity, checkout, price, image, id, category}) => {
 
 
 const ItemContainer = styled.div`
-    min-height: 200px;
+    min-height: 12em;
     min-width: 80%;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
     position: relative;
     display: grid;
     overflow: hidden;
     place-items: center;
     align-content: center;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    box-shadow: 10px 10px 15px rgba(171, 169, 176, .1);
+    box-shadow: .6em .6em .95em rgba(171, 169, 176, .1);
+    font-size: 1rem;
+    
 
     @media(max-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr;
@@ -71,6 +73,27 @@ const ItemContainer = styled.div`
     @media(max-width: 700px) {       
         width: 90%;
     }    
+
+    
+    @media(min-width: 1700px) {
+        font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+        font-size: 1.7rem;
+    }
+
+    @media(min-width: 2800px) {
+        font-size: 2.5rem;
+    }
+
+    @media(min-width: 4000px) {
+        font-size: 2.8rem;
+    }
+
+    @media(min-width: 5000px) {
+        font-size: 3.6rem;
+    }
 `
 const ItemTitle = styled.div`
     width: 100%;
@@ -96,14 +119,14 @@ const ItemTitle = styled.div`
 const DetailsContainer = styled.div`
     > h5 {
         color: ${({theme}) => theme.main};
-        margin: 10px 0;
-        font-size: 12px;
+        margin: .6em 0;
+        font-size: .8em;
         cursor: pointer;
     }
 
     > label {
-        font-size: 13px;
-        padding: 0 5px;
+        font-size: .85em;
+        padding: 0 .4em;
         color: gray;
         cursor: pointer;
         user-select: none;
@@ -124,8 +147,8 @@ const DetailsContainer = styled.div`
 `
 
 const Title = styled.h3`
-    font-size: 14px;
-    line-height: 17px;
+    font-size: .8em;
+    line-height: 1.05em;
 
     @media(max-width: 700px) {
         font-size: 12px;
@@ -134,7 +157,7 @@ const Title = styled.h3`
 
 const ItemImage = styled.img`
     height: 60%;
-    width: 150px;
+    width: 9.5em;
     object-fit: contain;
     justify-self: center;
     cursor: pointer;
@@ -146,7 +169,7 @@ const ItemImage = styled.img`
 `
 
 const ItemQuantity = styled.div`
-      width: 100%;
+    width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
@@ -188,14 +211,35 @@ const Total = styled.h4`
 
 const CheckBox = styled.input`
 
+    margin-inline: .15em;
+
+    @media(min-width: 1700px) {
+        transform: scale(1.3);
+    }
+
+    @media(min-width: 2000px) {
+        transform: scale(1.7);
+    }
+
+    @media(min-width: 2800px) {
+        transform: scale(2);
+    }
+
+    @media(min-width: 4000px) {
+        transform: scale(3);
+    }
+
+    @media(min-width: 5000px) {
+        transform: scale(4);
+    }
 `
 
 const RemoveButton = styled.h4`
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: .95em;
+    right: .95em;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     transition: .3s ease;
     z-index: 100;
 
